@@ -1,0 +1,13 @@
+This is the voice command system, version 0.01, for linux. It doesn't even have a name yet! It isn't a full voice control system, it's a voice command system. It will run scripts and commands based on vocal input.
+
+I'm releasing all this code under the GPLv3 license, and as usual I'll upload it eventually (I'm lazy! Google it!). If it's from the pocketsphinx tutorial, it's released under whatever licensing they use, but I think it's still GPL. I can't find it, and again, I'm lazy (I'll update this eventually, probably).
+
+Right now this has very, very, very basic functionality, and is basically just built upon the CMU sphinx example. But it works!
+
+It's also INCREDIBLY messy and patched together. So far I've just been putting things together to get something working as opposed to building a fully-featuerd product. It's making progress.
+
+So, a quick rundown! Most of what's going on you'll have to figure out by reading the code for the time being, but this is what's basically happening:
+
+First, read the config file. Check the config file against the existing dictionary file, if there's new stuff in the vocab file (or no dictionary file), then connect to the CMU sphinx sourceforge list of words and download the relevant words and build a dictionary file and a language model (the list contains 16k words, if I remember correctly, but it's possible your word isn't listed. If it isn't, you'll need to update the dictionary and lm manually). After all of that, start listening (and bring up a weird box thing). Once a word is recognized, and if it has a command associated with it, run the command it's associated with.
+
+Right now it's all cobbled together, but it'll be cleaned eventually. It depends on how busy I am this summer...

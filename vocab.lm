@@ -1,0 +1,34 @@
+\data\
+ngram 1=7
+ngram 2=10
+ngram 3=5
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.9243 STOP -0.2218
+-1.9243 LISTENING -0.2218
+-1.9243 CHECK -0.2218
+-1.9243 EMAIL -0.2218
+-1.9243 HELLO -0.2218
+
+\2-grams:
+-1.4472 <s> STOP 0.0000
+-1.4472 <s> LISTENING 0.0000
+-1.4472 <s> CHECK 0.0000
+-1.4472 <s> EMAIL 0.0000
+-1.4472 <s> HELLO 0.0000
+-0.3010 STOP </s> -0.3010
+-0.3010 LISTENING </s> -0.3010
+-0.3010 CHECK </s> -0.3010
+-0.3010 EMAIL </s> -0.3010
+-0.3010 HELLO </s> -0.3010
+
+\3-grams:
+-0.3010 <s> STOP </s>
+-0.3010 <s> LISTENING </s>
+-0.3010 <s> CHECK </s>
+-0.3010 <s> EMAIL </s>
+-0.3010 <s> HELLO </s>
+
+\end\
